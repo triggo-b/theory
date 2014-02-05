@@ -71,4 +71,5 @@ InnoDB это транзакционная база данных с возмож
   <li><a href="http://www.skillz.ru/dev/php/article-Obyasnenie_SQL_obedinenii_JOIN_INNER_OUTER.html">Объяснение SQL объединений JOIN/INNER/OUTER</a></li>
   <li><a href="http://www.tomjewett.com/dbdesign/dbdesign.php?page=class.php">UML design</a></li>
   <li><a href="http://denis.in.ua/foreign-keys-in-mysql.htm">Использование внешних ключей в MySQL</a></li>
+  <li><a href="http://www.interface.ru/home.asp?artId=23781">Первичный ключ - составной или суррогатный?</a></li>
 </ul>
