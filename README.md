@@ -68,4 +68,6 @@ InnoDB это транзакционная база данных с возмож
   <li><a href="http://habrahabr.ru/post/148446/">Немного о связываемых переменных (prepared statements)</a></li>
   <li><a href="http://habrahabr.ru/post/135217/">MySQL: уровни изоляции транзакций</a></li>
   <li><a href="http://ru.wikipedia.org/wiki/%D0%A3%D1%80%D0%BE%D0%B2%D0%B5%D0%BD%D1%8C_%D0%B8%D0%B7%D0%BE%D0%BB%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D0%B8_%D1%82%D1%80%D0%B0%D0%BD%D0%B7%D0%B0%D0%BA%D1%86%D0%B8%D0%B9">Уровень изолированности транзакций (Wiki)</a></li>
+  <li><a href="http://www.skillz.ru/dev/php/article-Obyasnenie_SQL_obedinenii_JOIN_INNER_OUTER.html">Объяснение SQL объединений JOIN/INNER/OUTER</a></li>
+  <li><a href="http://www.tomjewett.com/dbdesign/dbdesign.php?page=class.php">UML design</a></li>
 </ul>
