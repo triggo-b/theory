@@ -73,3 +73,4 @@ InnoDB это транзакционная база данных с возмож
   <li><a href="http://denis.in.ua/foreign-keys-in-mysql.htm">Использование внешних ключей в MySQL</a></li>
   <li><a href="http://www.interface.ru/home.asp?artId=23781">Первичный ключ - составной или суррогатный?</a></li>
 </ul>
+http://recens.ru/mysql/32_tips_to_speed_up_mysql.html
