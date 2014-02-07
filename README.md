@@ -77,3 +77,46 @@ InnoDB это транзакционная база данных с возмож
 <hr/>
 <p><strong>Ссылочная целостность</strong>—это состояние реляционной базы данных в которой записи не могут ссылаться на несуществующие записи в этой базе данных.</p>
 <p><strong>FOREIGN KEY</strong>—особый вид ограничения(constraint) MySQL, которое позволяет предотвратить нарушение ссылочной целостности при удалении/изменении информации в таблицах предках. Поддержка FOREIGN KEY поддерживается только для таблиц типа InnoDB</p>
+=====================================
+CREATE TABLE `users` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `name` varchar(45) NOT NULL,
+  `partner_id` int,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+DELIMITER $$
+
+CREATE TRIGGER `partner` AFTER INSERT ON `users`
+FOR EACH ROW
+BEGIN
+	SET @id = LAST_INSERT_ID();
+	IF NEW.`partner_id` = @id THEN
+		SET NEW.`partner_id` = 0;
+	END IF;	
+END$$
+DELIMITER ;
+
+/*
+INSERT INTO `users` (`name`, `partner_id`) VALUES ('andr', '1');
+INSERT INTO `users` (`name`, `partner_id`) VALUES ('mark', '2');
+*/
+
+PREPARE add_partner FROM 'INSERT INTO `users` (`name`, `partner_id`) VALUES (?, ?)';
+SET @user = 'John';
+SET @partner_id = '1';
+EXECUTE add_partner USING @user, @partner_id;
+
+SET @user = 'Mike';
+SET @partner_id = '1';
+EXECUTE add_partner USING @user, @partner_id;
+
+SET @user = 'Mike';
+SET @partner_id = '3';
+EXECUTE add_partner USING @user, @partner_id;
+
+SET @user = 'Mike';
+SET @partner_id = '3';
+EXECUTE add_partner USING @user, @partner_id;
+
+
