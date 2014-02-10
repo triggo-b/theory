@@ -119,4 +119,5 @@ SET @user = 'Mike';
 SET @partner_id = '3';
 EXECUTE add_partner USING @user, @partner_id;
 
-
+======================
+http://www.zendcasts.com/unit-testing-doctrine-2-entities/2011/02/
