@@ -126,3 +126,4 @@ http://www.zendcasts.com/unit-testing-doctrine-2-entities/2011/02/
 http://www.mongodb.org/
 http://robomongo.org/
 <a href="https://github.com/mongodb/mongo-php-driver/downloads">mongo extension for PHP</a>
+<a href="http://odiszapc.ru/">Мануалы Doctrine 2</a>
